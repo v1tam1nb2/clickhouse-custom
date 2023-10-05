@@ -1,0 +1,10 @@
+<clickhouse>
+    <logger>
+        <level>information</level>
+        <log>/var/log/clickhouse-server/clickhouse-server-%F-%T.log</log>
+        <errorlog>/var/log/clickhouse-server/clickhouse-server-%F-%T.err.log</errorlog>
+        <size>1000M</size>
+        <count>10</count>
+        <stream_compress>true</stream_compress>
+    </logger>
+</clickhouse>

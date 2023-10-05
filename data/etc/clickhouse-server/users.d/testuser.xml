@@ -1,0 +1,12 @@
+<yandex>
+    <users>
+      <testuser>
+          <profile>default</profile>
+          <networks>
+              <ip>::/0</ip>
+          </networks>
+          <password>password</password>
+          <quota>default</quota>
+      </testuser>
+    </users>
+</yandex>

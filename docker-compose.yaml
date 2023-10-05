@@ -1,0 +1,16 @@
+version: '3'
+services:
+  clickhouse:
+    image: clickhouse/clickhouse-server:23.3.8.21
+    container_name: clickhouse
+    hostname: clickhouse
+    restart: always
+    volumes:
+    - ./data/var/lib/clickhouse:/var/lib/clickhouse
+    - ./data/var/log/clickhouse-server:/var/log/clickhouse-server
+    - ./data/etc/clickhouse-server/users.d:/etc/clickhouse-server/users.d
+    - ./data/etc/clickhouse-server/config.d:/etc/clickhouse-server/config.d
+    ipc: host
+    ports:
+    - "9000:9000"
+    - "8123:8123"

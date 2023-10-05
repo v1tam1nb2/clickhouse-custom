@@ -1,0 +1,7 @@
+<clickhouse>
+    <compression>
+        <case>
+            <method>zstd</method>
+        </case>
+    </compression>
+</clickhouse>
