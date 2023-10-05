@@ -16,7 +16,8 @@
 │   │       │   ├── logging_off.xml  # query_thread_logなどを無効化する設定
 │   │       │   ├── timezone_default.xml # タイムゾーンの設定
 │   │       │   └── zstd_default.xml # データ圧縮形式をzstdを指定
-│   │       └── users.d # ユーザーを作成したい場合はここに配置
+│   │       └── users.d
+│   │           └── testuser.xml # ユーザー設定
 └── docker-compose.yaml # 構築用の設定ファイル
 ```
 
