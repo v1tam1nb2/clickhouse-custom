@@ -1,7 +1,6 @@
-version: '3'
 services:
   clickhouse:
-    image: clickhouse/clickhouse-server:23.3.8.21
+    image: clickhouse/clickhouse-server:24.3.5.46
     container_name: clickhouse
     hostname: clickhouse
     restart: always
@@ -14,3 +13,4 @@ services:
     ports:
     - "9000:9000"
     - "8123:8123"
+
